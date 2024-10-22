@@ -1,5 +1,5 @@
 "use client";
-
+import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import React from "react";
 
@@ -39,6 +39,7 @@ const ExploreSection = ({
 };
 
 export default ExploreSection;
+
 const cardData = [
   { id: 1, path: "", title: "IT", slug: "120+ Courses", isUnique: false },
   {
@@ -73,9 +74,26 @@ const CustomSmallCard = () => {
     <div className="grid grid-cols-4 gap-10">
       {cardData?.map((list) => (
         <Link href={list.path} key={list.id}>
-          <div className="bg-white hover:shadow-xl flex flex-col justify-center items-center p-20 rounded-2xl">
+          <div
+            className={`              
+              hover:shadow-xl
+              flex flex-col
+              justify-center 
+              items-center 
+              p-20 
+              rounded-2xl
+               ${
+                 list.isUnique ? "bg-black text-white" : "bg-white text-black"
+               }`}
+          >
             <h1 className="font-bold">{list.title}</h1>
-            <span className="text-skilled-gary-10">{list.slug}</span>
+            {list.isUnique ? (
+              <span className="text-skilled-gary-10">
+                <ArrowRightIcon className="w-96 h-10" />
+              </span>
+            ) : (
+              <span className="text-skilled-gary-10">{list.slug}</span>
+            )}
           </div>
         </Link>
       ))}

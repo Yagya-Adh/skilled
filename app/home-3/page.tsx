@@ -23,9 +23,7 @@ const HomeThree = () => {
         varriant="default-col"
         buttonName="Visit Courses"
       />
-
       <VideoSection />
-
       <ExploreSection
         headingPre="Explore 4000"
         headingItalic="free"
