@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRightIcon } from "@heroicons/react/16/solid";
+import { ArrowLongRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import React from "react";
 
@@ -89,7 +89,7 @@ const CustomSmallCard = () => {
             <h1 className="font-bold">{list.title}</h1>
             {list.isUnique ? (
               <span className="text-skilled-gary-10">
-                <ArrowRightIcon className="w-96 h-10" />
+                <ArrowLongRightIcon className="w-96 h-10" />
               </span>
             ) : (
               <span className="text-skilled-gary-10">{list.slug}</span>

@@ -2,13 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import Buttons from "../buttons/Buttons";
+import SearchBox from "../search/SearchBox";
 
 interface ImainProps {
   headingPre: string;
-  headingItalic: string;
-  headingPost: string;
+  headingItalic?: string;
+  headingPost?: string;
   describe: string;
-  varriant: "default-col" | "grid-image-card";
+  varriant: "default" | "default-col" | "grid-image-card";
   buttonName?: string;
 }
 const CustomBanner = ({
@@ -84,21 +85,18 @@ const CustomBanner = ({
         </div>
       </div>
     </section>
+  ) : varriant === "default" ? (
+    <section className="max-w-screen-2xl mx-auto px-10">
+      <div className=" flex flex-col items-center justify-center text-center  py-20">
+        <h1 className="text-5xl text-black max-w-sm">
+          <span> {headingPre} </span>
+          <span className="font-skillItalic italic"> {headingItalic} </span>
+          <span> {headingPost ? headingPost : ""} </span>
+        </h1>
+        <p className="text-xm my-4 py-1 max-w-screen-sm text-skilled-gary-10">
+          {describe}
+        </p>
+      </div>
+    </section>
   ) : null;
 export default CustomBanner;
-
-const SearchBox = () => {
-  return (
-    <div className="flex relative py-4">
-      <input
-        type="text"
-        placeholder="Enter cource"
-        className=" text-xl rounded-l-xl py-2 ps-12"
-      />
-      <button className=" py-2 px-3 bg-skilled-green-30 text-xl text-black font-bold hover:bg-black hover:text-white rounded-r-xl">
-        Search
-      </button>
-      <div className="absolute  top-4 left-4">{/* icon */}</div>
-    </div>
-  );
-};
