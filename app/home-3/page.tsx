@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import CustomBanner from "../components/card/CustomBanner";
+import VideoSection from "../components/video/VideoSection";
 
 const HomeThree = () => {
   return (
