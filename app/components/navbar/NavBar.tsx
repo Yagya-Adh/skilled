@@ -4,12 +4,13 @@ import Image from "next/image";
 import React from "react";
 import Buttons from "../buttons/Buttons";
 import Link from "next/link";
+import { ShoppingCartIcon } from "@heroicons/react/16/solid";
 
 const NavBar = () => {
   return (
     <nav className="sticky top-0 left-0 bg-white/80 z-20">
       <div className="max-w-screen-2xl mx-auto px-10 ">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center py-1">
           <Link href={"/"}>
             <Image
               src={"/assets/SkilledLogo.svg"}
@@ -30,6 +31,12 @@ const NavBar = () => {
           </ul>
 
           <div className="flex items-center justify-between px-10">
+            <div className="relative flex items-center me-4 p-5">
+              <ShoppingCartIcon className="size-7 -rotate-12" />
+              <span className=" p-0.5 px-3 absolute -top-1 -right-1 bg-skilled-gary-10 rounded-full text-white text-xl">
+                0
+              </span>
+            </div>
             <div>
               <Buttons text="Contact Us" varriant="default-dark-button" />
             </div>
@@ -44,7 +51,7 @@ export default NavBar;
 
 const navData = [
   { id: 1, name: "About Us", path: "/about-us" },
-  { id: 1, name: "Courses", path: "/courses" },
-  { id: 1, name: "Teachers", path: "/teachers" },
-  { id: 1, name: "All Pages", path: "/teachers" },
+  { id: 2, name: "Courses", path: "/courses" },
+  { id: 3, name: "Teachers", path: "/teachers" },
+  { id: 4, name: "All Pages", path: "/teachers" },
 ];

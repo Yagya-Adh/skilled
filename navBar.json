@@ -1,6 +1,6 @@
 [
   { "id": 1, "name": "About Us", "path": "/about-us" },
-  { "id": 1, "name": "Courses", "path": "/courses" },
-  { "id": 1, "name": "Teachers", "path": "/teachers" },
-  { "id": 1, "name": "All Pages", "path": "/teachers" }
+  { "id": 2, "name": "Courses", "path": "/courses" },
+  { "id": 3, "name": "Teachers", "path": "/teachers" },
+  { "id": 4, "name": "All Pages", "path": "/teachers" }
 ]

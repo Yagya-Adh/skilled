@@ -21,6 +21,7 @@ const config: Config = {
           },
           gary: {
             10: "#5f5f5f",
+            20: "#ebfeda",
           },
 
           /* 7ad493ea\>: #0e0e0e;
