@@ -2,12 +2,12 @@
 import React from "react";
 
 interface Ibuttons {
-  varriant: "default-button";
+  varriant: "default-dark-button";
   text: string;
 }
 
 const Buttons = ({ varriant, text }: Ibuttons) =>
-  varriant === "default-button" ? (
+  varriant === "default-dark-button" ? (
     <>
       <button
         className={`

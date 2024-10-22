@@ -44,7 +44,7 @@ export default NavBar;
 
 const navData = [
   { id: 1, name: "About Us", path: "/about-us" },
-  { id: 1, name: "Cources", path: "/cources" },
+  { id: 1, name: "Courses", path: "/courses" },
   { id: 1, name: "Teachers", path: "/teachers" },
   { id: 1, name: "All Pages", path: "/teachers" },
 ];

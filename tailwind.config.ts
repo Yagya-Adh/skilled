@@ -19,6 +19,9 @@ const config: Config = {
           green: {
             30: "#6fedb2",
           },
+          gary: {
+            10: "#5f5f5f",
+          },
 
           /* 7ad493ea\>: #0e0e0e;
     --black: black;
