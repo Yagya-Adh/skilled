@@ -2,6 +2,7 @@
 import React from "react";
 import CustomBanner from "../components/card/CustomBanner";
 import VideoSection from "../components/video/VideoSection";
+import ExploreSection from "../components/home/ExploreSection";
 
 const HomeThree = () => {
   return (
@@ -24,6 +25,13 @@ const HomeThree = () => {
       />
 
       <VideoSection />
+
+      <ExploreSection
+        headingPre="Explore 4000"
+        headingItalic="free"
+        headingPost="online courses"
+        describe="Our platform offers high-quality video tutorials, on-the-go audio lessons, and interactive live classes to suit your learning style and schedule. Experience flexible and engaging education tailored to your needs."
+      />
     </>
   );
 };

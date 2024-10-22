@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className="">
-      <div className="max-w-screen-2xl mx-auto px-10 sticky top-0 left-0">
+    <nav className="sticky top-0 left-0 bg-white/80 z-20">
+      <div className="max-w-screen-2xl mx-auto px-10 ">
         <div className="flex justify-between items-center">
           <Link href={"/"}>
             <Image
@@ -31,7 +31,7 @@ const NavBar = () => {
 
           <div className="flex items-center justify-between px-10">
             <div>
-              <Buttons text="Contact Us" varriant="default-button" />
+              <Buttons text="Contact Us" varriant="default-dark-button" />
             </div>
           </div>
         </div>

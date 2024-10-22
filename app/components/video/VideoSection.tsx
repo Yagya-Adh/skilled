@@ -25,7 +25,7 @@ const VideoSection = () => {
             className="w-full h-full"
           ></video> */}
 
-          {/*  <iframe
+          <iframe
             src="https://www.youtube.com/embed/VIDEO_ID?controls=1"
             title="Embedded Video"
             className="w-full h-full"
@@ -33,9 +33,9 @@ const VideoSection = () => {
             width={600}
             allowFullScreen
             // frameBorder="0"
-          ></iframe> */}
+          ></iframe>
 
-          <video
+          {/* <video
             src={"https://www.youtube.com/embed/VIDEO_ID?controls=1"}
             controls={true}
             height={500}
@@ -43,7 +43,7 @@ const VideoSection = () => {
             poster={
               "https://hips.hearstapps.com/hmg-prod/images/ripley-pa-108-011822-01629-r-661067043d66f.jpg?resize=980:*"
             }
-          />
+          /> */}
         </div>
 
         <div className="flex justify-between items-center">
