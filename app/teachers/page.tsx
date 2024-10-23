@@ -4,6 +4,7 @@ import React from "react";
 import CustomSubscribeCard from "../components/faq/CustomeSubscribeCard";
 import CustomBanner from "../components/card/CustomBanner";
 import VideoSection from "../components/video/VideoSection";
+import FrequentlyAsked from "../components/faq/FrequentlyAsked";
 
 const Teachers = () => {
   return (
@@ -21,6 +22,7 @@ const Teachers = () => {
         describe="You will find answers to frequently asked questions about our courses and services. We are here to help you every step of the way in your studies."
         varriant="default"
       />
+      <FrequentlyAsked />
       <CustomSubscribeCard />
     </>
   );
