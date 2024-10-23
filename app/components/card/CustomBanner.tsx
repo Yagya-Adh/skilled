@@ -72,9 +72,7 @@ const CustomBanner = ({
           <span className="font-skillItalic italic"> {headingItalic} </span>
           <span> {headingPost} </span>
         </h1>
-        <p className="text-xm my-4 px-60 max-w-screen-xl text-skilled-gary-10">
-          {describe}
-        </p>
+        <p className="text-xm my-4 max-w-xl text-skilled-gary-10">{describe}</p>
         <div>
           <Buttons
             varriant="default-dark-button"
