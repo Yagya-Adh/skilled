@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import { useState } from "react";
 import faqData from "@/frequentlyaskquestion.json";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 

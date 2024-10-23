@@ -1,6 +1,4 @@
-"use clinet";
 import Image from "next/image";
-import React from "react";
 import Buttons from "../buttons/Buttons";
 import SearchBox from "../search/SearchBox";
 

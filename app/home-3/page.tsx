@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import CustomBanner from "../components/card/CustomBanner";
 import VideoSection from "../components/video/VideoSection";
 import ExploreSection from "../components/home/ExploreSection";
@@ -14,7 +13,6 @@ const HomeThree = () => {
         describe="Our platform offers a wide range of courses and resources designed to help you acquire new competencies, stay current with industry trends, and improve your employability."
         varriant="grid-image-card"
       />
-
       <CustomBanner
         headingPre="Enjoy"
         headingItalic="learning"

@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import CustomBanner from "../components/card/CustomBanner";
 import CustomSubscribe from "../components/faq/CustomSubscribe";
 import FrequentlyAsked from "../components/faq/FrequentlyAsked";

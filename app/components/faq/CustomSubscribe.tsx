@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import CustomSubscribeCard from "./CustomeSubscribeCard";
 
 const CustomSubscribe = () => {

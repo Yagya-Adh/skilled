@@ -1,7 +1,5 @@
-"use client";
 import { ArrowLongRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import React from "react";
 
 interface IExploreProps {
   headingPre: string;
@@ -83,7 +81,9 @@ const CustomSmallCard = () => {
               p-20 
               rounded-2xl
                ${
-                 list.isUnique ? "bg-black text-white" : "bg-white text-black"
+                 list.isUnique
+                   ? "bg-black text-white hover:bg-skilled-green-30"
+                   : "bg-white text-black"
                }`}
           >
             <h1 className="font-bold">{list.title}</h1>

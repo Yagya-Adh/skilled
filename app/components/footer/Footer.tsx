@@ -1,4 +1,3 @@
-"use clinet";
 import Image from "next/image";
 import navData from "@/navBar.json";
 import Link from "next/link";

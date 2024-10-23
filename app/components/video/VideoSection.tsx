@@ -1,6 +1,4 @@
-"use client";
 import Image from "next/image";
-import React from "react";
 
 const videoData = [
   { id: 1, title: "Audio classes", image: "/assets/icons/audio.svg" },

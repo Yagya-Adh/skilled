@@ -1,6 +1,3 @@
-"use clinet";
-import React from "react";
-
 interface Ibuttons {
   varriant: "default-dark-button";
   text: string;

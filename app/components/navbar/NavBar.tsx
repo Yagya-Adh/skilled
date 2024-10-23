@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import React from "react";
 import Buttons from "../buttons/Buttons";
 import Link from "next/link";
 import { ShoppingCartIcon } from "@heroicons/react/16/solid";

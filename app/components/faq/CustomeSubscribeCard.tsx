@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-
 const CustomSubscribeCard = () => {
   return (
     <section className="max-w-screen-2xl mx-auto px-10 my-20">

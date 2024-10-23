@@ -1,8 +1,5 @@
-"use client";
-import React from "react";
-
-const Cources = () => {
-  return <div>Cources</div>;
+const Courses = () => {
+  return <div>Courses</div>;
 };
 
-export default Cources;
+export default Courses;
