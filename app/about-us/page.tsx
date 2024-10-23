@@ -1,6 +1,7 @@
 import CustomBanner from "../components/card/CustomBanner";
 import OurMission from "../components/about/OurMission";
 import OurVision from "../components/about/OurVision";
+import MostPopular from "@/public/assets/about/MostPopular";
 
 const AboutUs = () => {
   return (
@@ -14,10 +15,9 @@ const AboutUs = () => {
           varriant="default-col"
         />
       </div>
-      <div className="max-w-screen-2xl mx-auto px-10">
-        <OurVision />
-        <OurMission />
-      </div>
+      <OurVision />
+      <OurMission />
+      <MostPopular />
     </>
   );
 };

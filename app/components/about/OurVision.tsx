@@ -32,7 +32,7 @@ const OurVision = () => {
   };
 
   return (
-    <section className="bg-white my-40">
+    <section className="bg-white my-40 max-w-screen-2xl mx-auto px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col mx-20 h-full">
           <article>
