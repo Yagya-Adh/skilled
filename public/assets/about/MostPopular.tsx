@@ -60,31 +60,49 @@ const MostPopular = () => {
         </h2>
       </article>
 
-      <article className="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-10">
+      <div className="flex flex-row items-center">
         {data.map((list) => (
-          <div className="flex flex-col" key={list.id}>
-            <Image
-              src={list.image}
-              alt="popular_courses_"
-              height={300}
-              width={300}
-              className="rounded-xl"
-            />{" "}
-            <h6 className="text-4xl font-bold text-black hover:text-skilled-green-30">
-              {list.title}
-            </h6>
-            <p className="flex justify-between items-center text-xl">
-              <span> {list.startRating.toFixed(2)} STATS </span>
-              <span>{`(${list.ratingGiver})`}</span>
-            </p>
-            <h4 className="text-xl mt-4">
-              {list.currenyTag}
-              {list.price}
-              {list.currency}{" "}
-            </h4>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 w-full h-full"
+            key={list.id}
+          >
+            <div className="flex flex-col p-4 justify-center">
+              <Image
+                src={list.image}
+                alt="popular_courses_"
+                height={800}
+                width={800}
+                className="rounded-xl"
+              />{" "}
+              <h2 className="text-4xl font-bold text-black hover:text-skilled-green-30 py-1">
+                {list.title}
+              </h2>
+              <p className="flex justify-between items-center text-xl">
+                <span className="font-bold">
+                  {" "}
+                  {list.startRating.toFixed(2)} STATS{" "}
+                </span>
+                <span className="text-skilled-gary-10">{`(${list.ratingGiver})`}</span>
+              </p>
+              <div className="flex items-center">
+                <h4 className="font-bold flex items-center">
+                  {list.currenyTag}
+                  {list.price}
+                  {list.currency}{" "}
+                </h4>
+                <h3 className="line-through text-skilled-gary-10 mx-4">
+                  {list.fullPrice && (
+                    <>
+                      {list.currenyTag}
+                      <span className="line-through ">{list.fullPrice}</span>
+                    </>
+                  )}
+                </h3>
+              </div>
+            </div>
           </div>
         ))}
-      </article>
+      </div>
     </section>
   );
 };

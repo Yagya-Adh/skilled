@@ -12,12 +12,21 @@ const AboutUs = () => {
           headingItalic="Skilled"
           describe="We are dedicated to empowering learners worldwide by providing high-quality, accessible, and engaging courses across various disciplines."
           buttonName="View Courses"
-          varriant="default-col"
+          variant="default-col"
         />
       </div>
       <OurVision />
       <OurMission />
       <MostPopular />
+
+      <CustomBanner
+        headingPre="10K+"
+        headingItalic="students"
+        headingPost="takes this courses. What are you waiting for?"
+        buttonName="Get Started Now"
+        buttonTextSize="text-sm"
+        variant="default-col"
+      />
     </>
   );
 };

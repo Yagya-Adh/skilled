@@ -1,14 +1,14 @@
 interface Ibuttons {
-  varriant: "default-dark-button";
+  variant: "default-dark-button";
   text: string;
+  buttonTextSize?: "text-sm" | "text-normal" | "text-xl";
 }
 
-const Buttons = ({ varriant, text }: Ibuttons) =>
-  varriant === "default-dark-button" ? (
-    <>
-      <button
-        className={`
-            text-xl             
+const Buttons = ({ variant, text, buttonTextSize }: Ibuttons) =>
+  variant === "default-dark-button" ? (
+    <button
+      className={`
+                        
             text-white
             hover:text-black
             bg-black 
@@ -19,11 +19,19 @@ const Buttons = ({ varriant, text }: Ibuttons) =>
             ms-1
             rounded-md
             transition-all ease-in-out duration-300
-            `}
-      >
-        {text}
-      </button>
-    </>
+          ${
+            buttonTextSize === "text-sm"
+              ? "text-sm"
+              : buttonTextSize === "text-xl"
+              ? "text-xl"
+              : buttonTextSize === "text-normal"
+              ? "text-base"
+              : ""
+          }  
+      `}
+    >
+      {text}
+    </button>
   ) : null;
 
 export default Buttons;

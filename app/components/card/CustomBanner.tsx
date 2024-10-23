@@ -6,19 +6,21 @@ interface ImainProps {
   headingPre: string;
   headingItalic?: string;
   headingPost?: string;
-  describe: string;
-  varriant: "default" | "default-col" | "grid-image-card";
+  describe?: string;
+  variant: "default" | "default-col" | "grid-image-card";
   buttonName?: string;
+  buttonTextSize?: "text-sm" | "text-normal" | "text-xl";
 }
 const CustomBanner = ({
   headingPre,
   headingItalic,
   headingPost,
   describe,
-  varriant,
+  variant,
   buttonName,
+  buttonTextSize,
 }: ImainProps) =>
-  varriant === "grid-image-card" ? (
+  variant === "grid-image-card" ? (
     <div className="max-w-screen-2xl mx-auto px-10">
       <div className="bg-gradient-to-r from-[#ebfeda] to-[#afebf4] w-full h-full overflow-hidden rounded-3xl">
         <div className="grid md:grid-cols-6 gap-4">
@@ -64,7 +66,7 @@ const CustomBanner = ({
         </div>
       </div>
     </div>
-  ) : varriant === "default-col" ? (
+  ) : variant === "default-col" ? (
     <section className="max-w-screen-2xl mx-auto px-10">
       <div className=" flex flex-col items-center justify-center text-center  py-20">
         <h1 className="text-5xl text-black max-w-2xl">
@@ -75,13 +77,14 @@ const CustomBanner = ({
         <p className="text-xm my-4 max-w-xl text-skilled-gary-10">{describe}</p>
         <div>
           <Buttons
-            varriant="default-dark-button"
+            variant="default-dark-button"
             text={buttonName ? buttonName : ""}
+            buttonTextSize={buttonTextSize}
           />
         </div>
       </div>
     </section>
-  ) : varriant === "default" ? (
+  ) : variant === "default" ? (
     <section className="max-w-screen-2xl mx-auto px-10">
       <div className=" flex flex-col items-center justify-center text-center  py-20">
         <h1 className="text-5xl text-black max-w-sm">
